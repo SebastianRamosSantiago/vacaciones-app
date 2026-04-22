@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vacaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏖️ Sistema de Registro de Vacaciones</h1>
+        
+        <!-- Selector de empleado -->
+        <div class="card">
+            <h2>👤 Seleccionar Empleado</h2>
+            <select id="empleadoSelect">
+                <option value="">-- Selecciona un empleado --</option>
+            </select>
+            <div id="infoEmpleado" class="info-empleado"></div>
+        </div>
+    
+        
+        <!-- Formulario de solicitud -->
+        <div class="card" id="formularioCard" style="display:none;">
+            <h2>📅 Solicitar Vacaciones</h2>
+            <form id="vacacionesForm">
+                <div class="form-group">
+                    <label>Fecha Inicio:</label>
+                    <input type="date" id="fechaInicio" required>
+                </div>
+                <div class="form-group">
+                    <label>Fecha Fin:</label>
+                    <input type="date" id="fechaFin" required>
+                </div>
+                <div class="form-group">
+                    <label>Motivo:</label>
+                    <textarea id="motivo" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Solicitar Vacaciones</button>
+            </form>
+        </div>
+        
+        <!-- Historial de solicitudes -->
+        <div class="card" id="historialCard" style="display:none;">
+            <h2>📋 Mis Solicitudes</h2>
+            <div id="listaSolicitudes"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

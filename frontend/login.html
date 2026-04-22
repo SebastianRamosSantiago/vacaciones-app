@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Vacaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <h2>🏖️ Sistema de Vacaciones</h2>
+            <h3>Iniciar Sesión</h3>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Usuario:</label>
+                    <input type="text" id="username" required placeholder="Ej: ana.garcia">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input type="password" id="password" required placeholder="••••••">
+                </div>
+                <button type="submit" class="btn-primary">Ingresar</button>
+            </form>
+            
+            <div class="info-demo">
+                <strong>📝 Cuentas de demostración:</strong>
+                <p>👤 ana.garcia / 123456 (Empleado - Ventas)</p>
+                <p>👤 carlos.lopez / 123456 (Empleado - TI)</p>
+                <p>👤 maria.rodriguez / 123456 (Empleado - RRHH)</p>
+                <p>👑 admin / admin123 (Administrador)</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
