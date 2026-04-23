@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory, redirect, url_for, session
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
-from database import get_connection, init_db
+from .database import get_connection, init_db
 import sqlite3
 from datetime import datetime
 import os
